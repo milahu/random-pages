@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>custom-elements-without-dash</title>
+    <style>
+      /* custom element <nw>...</nw>
+        nw = nowrap
+        useful for sentence-parts, which should not be broken by linebreaks
+        note: use this only for short sentence-parts,
+        which are shorter than one line.
+        if the sentence-part is longer than one line,
+        it will overflow the container
+      */
+      nw {
+        white-space: nowrap;
+      }
+
+      /* debug overflow of paragraph width */
+      p {
+        border: solid 1px black;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>custom-elements-without-dash</h1>
+
+    <h2>paragraph width: 5em</h2>
+    <p style="width:5em">
+      paragraph content, paragraph content, paragraph content, paragraph content,
+      <nw>(do not wrap this part)</nw>
+      <nw>(do not wrap this part)</nw>
+      paragraph content, paragraph content, paragraph content, paragraph content,
+      <nw>(do not wrap this part)</nw>
+      <nw>(do not wrap this part)</nw>
+    </p>
+
+    <h2>paragraph width: 10em</h2>
+    <p style="width:10em">
+      paragraph content, paragraph content, paragraph content, paragraph content,
+      <nw>(do not wrap this part)</nw>
+      <nw>(do not wrap this part)</nw>
+      paragraph content, paragraph content, paragraph content, paragraph content,
+      <nw>(do not wrap this part)</nw>
+      <nw>(do not wrap this part)</nw>
+    </p>
+
+    <h2>paragraph width: 20em</h2>
+    <p style="width:20em">
+      paragraph content, paragraph content, paragraph content, paragraph content,
+      <nw>(do not wrap this part)</nw>
+      <nw>(do not wrap this part)</nw>
+      paragraph content, paragraph content, paragraph content, paragraph content,
+      <nw>(do not wrap this part)</nw>
+      <nw>(do not wrap this part)</nw>
+    </p>
+
+    <h2>paragraph width: 25em</h2>
+    <p style="width:25em">
+      paragraph content, paragraph content, paragraph content, paragraph content,
+      <nw>(do not wrap this part)</nw>
+      <nw>(do not wrap this part)</nw>
+      paragraph content, paragraph content, paragraph content, paragraph content,
+      <nw>(do not wrap this part)</nw>
+      <nw>(do not wrap this part)</nw>
+    </p>
+
+    <h2>paragraph width: 30em</h2>
+    <p style="width:30em">
+      paragraph content, paragraph content, paragraph content, paragraph content,
+      <nw>(do not wrap this part)</nw>
+      <nw>(do not wrap this part)</nw>
+      paragraph content, paragraph content, paragraph content, paragraph content,
+      <nw>(do not wrap this part)</nw>
+      <nw>(do not wrap this part)</nw>
+    </p>
+
+    <h2>paragraph width: 40em</h2>
+    <p style="width:40em">
+      paragraph content, paragraph content, paragraph content, paragraph content,
+      <nw>(do not wrap this part)</nw>
+      <nw>(do not wrap this part)</nw>
+      paragraph content, paragraph content, paragraph content, paragraph content,
+      <nw>(do not wrap this part)</nw>
+      <nw>(do not wrap this part)</nw>
+    </p>
+
+  </body>
+</html>
